@@ -1,0 +1,30 @@
+
+:root {
+  /* ----- Couleurs ----- */
+  --violet: #A06C9F;
+  --noir: #000000;
+  --blanc: #FFFFFF;
+  --bordure-champ: rgba(0, 0, 0, 0.36);
+    --bleu-fond: #C2D7DD;
+  --gris-clair: #F3F3F3;
+
+  /* Cartes "Comment ça marche ?" (couleurs transparentes) */
+  --carte-verte: rgba(136, 156, 120, 0.29);
+  --carte-rose: rgba(160, 108, 159, 0.31);
+  --carte-bleue: rgba(194, 215, 221, 0.57);
+
+  /* ----- Polices ----- */
+  --police-titre-accueil: "Julee", cursive;
+  --police-texte: "Parkinsans", sans-serif;
+  --police-manuscrite: "Dancing Script", cursive;
+  --police-bouton: "Koulen", sans-serif;
+  --police-lien: "Jost", sans-serif;
+  --police-choix: "Kreon", serif;
+  --police-titre-connexion: "Jersey 25", sans-serif;
+  --police-etiquette: "Jockey One", sans-serif;
+
+  /* ----- Arrondis ----- */
+  --arrondi-champ: 30px;
+  --arrondi-violet: 17px;
+  --arrondi-carte: 17px;
+}
