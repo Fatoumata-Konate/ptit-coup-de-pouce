@@ -1,0 +1,110 @@
+
+/* ----- Remise à zéro ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--police-texte);
+  color: var(--noir);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ----- Menu du haut ----- */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--bleu-fond);
+}
+
+.logo {
+  font-family: var(--police-manuscrite);
+  font-size: 44px;
+}
+
+.coeur {
+  color: var(--violet);
+}
+
+nav {
+  display: flex;
+  gap: 60px;
+}
+
+.lien-menu {
+  font-size: 26px;
+}
+
+.lien-menu:hover,
+.lien-menu.actif {
+  text-decoration: underline;
+}
+
+/* ----- Bouton violet ----- */
+.bouton-violet {
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 26px;
+  padding: 10px 35px;
+  border-radius: var(--arrondi-violet);
+}
+
+.bouton-violet:hover {
+  opacity: 0.85;
+}
+/* ----- Bouton noir (CONNEXION, S'INSCRIRE) ----- */
+.bouton-noir {
+  display: inline-block;
+  background-color: var(--noir);
+  color: var(--blanc);
+  font-family: var(--police-bouton);
+  font-size: 30px;
+  width: 304px;
+  height: 56px;
+  border: none;
+  border-radius: var(--arrondi-champ);
+  cursor: pointer;
+}
+
+.bouton-noir:hover {
+  opacity: 0.85;
+}
+
+/* ----- Étiquette au-dessus d'un champ ("E-mail") ----- */
+.etiquette {
+  display: block;
+  font-family: var(--police-etiquette);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+/* ----- Champ de saisie ----- */
+.champ {
+  width: 618px;
+  height: 60px;
+  padding: 0 30px;
+  font-family: var(--police-lien);
+  font-size: 20px;
+  background-color: var(--blanc);
+  border: 1px solid var(--bordure-champ);
+  border-radius: var(--arrondi-champ);
+}
+
+.champ:focus {
+  outline: 2px solid var(--violet);
+}
+
+/* ----- Lien souligné ("Mot de passe oublié ?") ----- */
+.lien-souligne {
+  font-family: var(--police-lien);
+  font-size: 22px;
+  text-decoration: underline;
+}
