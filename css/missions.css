@@ -1,0 +1,191 @@
+
+
+main {
+  background-color: var(--gris-clair);
+  padding: 50px 40px;
+  min-height: 100vh;
+}
+
+.titre-page {
+  font-family: var(--police-titre-accueil);
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ----- Zone des filtres ----- */
+.filtres {
+  background-color: var(--bleu-fond);
+  padding: 30px;
+  border-radius: var(--arrondi-carte);
+  margin-bottom: 40px;
+}
+
+.filtres .etiquette {
+  font-size: 20px;
+}
+
+.filtres .champ,
+.filtres .bouton-noir {
+  width: 100%;
+}
+
+/* ----- Cartes de mission ----- */
+.carte-mission {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  border-radius: var(--arrondi-carte);
+}
+
+.carte-verte { background-color: var(--carte-verte); }
+.carte-rose  { background-color: var(--carte-rose); }
+.carte-bleue { background-color: var(--carte-bleue); }
+
+.categorie {
+  align-self: flex-start;
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 14px;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.carte-mission h2 {
+  font-family: var(--police-manuscrite);
+  font-size: 30px;
+}
+
+.infos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carte-mission .bouton-violet {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 18px;
+  padding: 8px 25px;
+}
+/*detail d'une mission*/
+
+.lien-retour {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-family: var(--police-lien);
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.detail-mission h1 {
+  font-family: var(--police-manuscrite);
+  font-size: 48px;
+}
+
+.detail-mission .description,
+.detail-mission .infos {
+  font-size: 20px;
+}
+
+.detail-mission .bouton-noir {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.bouton-noir:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.message-confirmation {
+  background-color: var(--blanc);
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+/* ----- Carte de la personne ----- */
+.carte-demandeur {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 25px;
+  background-color: var(--blanc);
+  border-radius: var(--arrondi-carte);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carte-demandeur h2 {
+  font-family: var(--police-manuscrite);
+  font-size: 32px;
+}
+
+.etoiles {
+  color: var(--violet);
+  font-size: 22px;
+}
+
+.etoiles span {
+  color: var(--noir);
+  font-size: 16px;
+}
+/* PAGE PUBLIER UNE DEMANDE */
+
+.carte-formulaire {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: var(--blanc);
+  border-radius: var(--arrondi-carte);
+}
+
+.carte-formulaire .champ {
+  width: 100%;
+}
+
+.zone-texte {
+  height: 160px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  resize: vertical;
+}
+
+.aide-champ {
+  font-size: 15px;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+/* ----- Responsive des pages missions ----- */
+@media (max-width: 768px) {
+  main {
+    padding: 30px 15px;
+  }
+
+  .titre-page {
+    font-size: 44px;
+  }
+
+  .carte-formulaire {
+    padding: 25px;
+  }
+
+  .detail-mission h1 {
+    font-size: 36px;
+  }
+}

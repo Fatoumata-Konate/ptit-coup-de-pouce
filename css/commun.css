@@ -108,3 +108,40 @@ nav {
   font-size: 22px;
   text-decoration: underline;
 }
+/* ----- Éléments qui ne doivent jamais dépasser de l'écran ----- */
+.champ,
+.bouton-noir {
+  max-width: 100%;
+}
+
+/* =========================================
+   RESPONSIVE : TABLETTE ET TÉLÉPHONE
+   ========================================= */
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .lien-menu {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .bouton-violet {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+}

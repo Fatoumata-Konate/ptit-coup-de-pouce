@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publier une demande- P'tit coup de pouce</title>
+
+  <!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Polices Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+25&family=Jockey+One&family=Jost&family=Julee&family=Koulen&family=Kreon&family=Parkinsans&display=swap" rel="stylesheet">
+
+  <!-- Nos fichiers CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/commun.css">
+  <link rel="stylesheet" href="../css/missions.css">
+</head>
+<body>
+
+  <!--  MENU DU HAUT -->
+  <header class="menu">
+    <a href="../index.html" class="logo">P'tit coup de pouce <span class="coeur">♥</span></a>
+
+    <nav>
+      <a href="../index.html" class="lien-menu">Accueil</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+    </nav>
+
+    <a href="connexion.html" class="bouton-violet">Connexion</a>
+  </header>
+  <main>
+    <a href="missions.html" class="lien-retour">← Retour aux missions</a>
+
+    <section class="carte-formulaire">
+      <h1 class="titre-page">Publier une demande</h1>
+
+      <form id="formulaire-demande">
+        <div class="row g-4">
+
+          <div class="col-12">
+            <label class="etiquette" for="titre">Titre de la demande</label>
+            <input class="champ" type="text" id="titre" name="titre" placeholder="Ex : Porter mes courses" required>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="etiquette" for="categorie">Catégorie</label>
+            <select class="champ" id="categorie" name="categorie" required>
+              <option value="">Choisir une catégorie</option>
+              <option value="courses">Courses</option>
+              <option value="numerique">Assistance numérique</option>
+              <option value="demarches">Démarches en ligne</option>
+              <option value="jardinage">Jardinage</option>
+              <option value="accompagnement">Accompagnement</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="etiquette" for="duree">Durée</label>
+            <select class="champ" id="duree" name="duree" required>
+              <option value="">Choisir une durée</option>
+              <option value="15">15 min</option>
+              <option value="30">30 min</option>
+              <option value="45">45 min</option>
+              <option value="60">1 h (maximum)</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="etiquette" for="ville">Ville ou quartier</label>
+            <input class="champ" type="text" id="ville" name="ville" placeholder="Ex : Paris 11e" required>
+            <p class="aide-champ">Votre adresse exacte ne sera jamais affichée.</p>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="etiquette" for="date">Date souhaitée</label>
+            <input class="champ" type="date" id="date" name="date" required>
+          </div>
+
+          <div class="col-12">
+            <label class="etiquette" for="description">Description</label>
+            <textarea class="champ zone-texte" id="description" name="description" placeholder="Expliquez simplement ce dont vous avez besoin..." required></textarea>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="bouton-noir">PUBLIER MA DEMANDE</button>
+          </div>
+
+        </div>
+      </form>
+
+      <p id="message-publication" class="message-confirmation mt-4" role="status" hidden>
+        ✅ Votre demande a bien été publiée ! Les bénévoles près de chez vous peuvent maintenant la voir.
+      </p>
+    </section>
+  </main>
+
+  <script src="../js/publier.js"></script>
+
+</body>
+  
+</html>

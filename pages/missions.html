@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les missions - P'tit coup de pouce</title>
+
+  <!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Polices Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+25&family=Jockey+One&family=Jost&family=Julee&family=Koulen&family=Kreon&family=Parkinsans&display=swap" rel="stylesheet">
+
+  <!--  fichiers CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/commun.css">
+  <link rel="stylesheet" href="../css/missions.css">
+</head>
+<body>
+
+  <!--  MENU DU HAUT  -->
+  <header class="menu">
+    <a href="../index.html" class="logo">P'tit coup de pouce <span class="coeur">♥</span></a>
+
+    <nav>
+      <a href="../index.html" class="lien-menu">Accueil</a>
+      <a href="missions.html" class="lien-menu actif">Les missions</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+    </nav>
+
+    <a href="connexion.html" class="bouton-violet">Connexion</a>
+  </header>
+
+  <main>
+    <h1 class="titre-page">Les missions</h1>
+    <div class="text-center mb-4">
+      <a href="publier.html" class="bouton-violet">+ Publier une demande</a>
+    </div>
+
+
+    <!-- FILTRES  -->
+    <form class="filtres">
+      <div class="row g-3 align-items-end">
+
+        <div class="col-12 col-md-3">
+          <label class="etiquette" for="categorie">Catégorie</label>
+          <select class="champ" id="categorie" name="categorie">
+            <option value="">Toutes</option>
+            <option value="courses">Courses</option>
+            <option value="numerique">Assistance numérique</option>
+            <option value="demarches">Démarches en ligne</option>
+            <option value="jardinage">Jardinage</option>
+            <option value="accompagnement">Accompagnement</option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <label class="etiquette" for="ville">Ville</label>
+          <input class="champ" type="text" id="ville" name="ville" placeholder="Ex : Paris">
+        </div>
+
+        <div class="col-12 col-md-3">
+          <label class="etiquette" for="date">Date</label>
+          <input class="champ" type="date" id="date" name="date">
+        </div>
+
+        <div class="col-12 col-md-3">
+          <button type="submit" class="bouton-noir">RECHERCHER</button>
+        </div>
+
+      </div>
+    </form>
+
+    <!--  LISTE DES MISSIONS  -->
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="carte-mission carte-verte">
+          <span class="categorie">Courses</span>
+          <h2>Porter mes courses</h2>
+          <p>J'ai besoin d'aide pour ramener mes courses du marché jusqu'à chez moi.</p>
+          <ul class="infos">
+            <li>📍 Paris 11e</li>
+            <li>📅 20 novembre 2026</li>
+            <li>⏱️ 45 min</li>
+          </ul>
+          <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="carte-mission carte-rose">
+          <span class="categorie">Assistance numérique</span>
+          <h2>Utiliser mon smartphone</h2>
+          <p>Je voudrais apprendre à faire des appels vidéo avec mes petits-enfants.</p>
+          <ul class="infos">
+            <li>📍 Lyon 3e</li>
+            <li>📅 21 novembre 2026</li>
+            <li>⏱️ 1 h</li>
+          </ul>
+          <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="carte-mission carte-bleue">
+          <span class="categorie">Démarches en ligne</span>
+          <h2>Déclarer mes impôts</h2>
+          <p>Je ne sais pas comment remplir ma déclaration sur internet.</p>
+          <ul class="infos">
+            <li>📍 Paris 15e</li>
+            <li>📅 22 novembre 2026</li>
+            <li>⏱️ 1 h</li>
+          </ul>
+          <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="carte-mission carte-verte">
+          <span class="categorie">Jardinage</span>
+          <h2>Tailler mes plantes</h2>
+          <p>Mon petit jardin a besoin d'un coup de propre avant l'hiver.</p>
+          <ul class="infos">
+            <li>📍 Montreuil</li>
+            <li>📅 23 novembre 2026</li>
+            <li>⏱️ 30 min</li>
+          </ul>
+          <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="carte-mission carte-rose">
+          <span class="categorie">Accompagnement</span>
+          <h2>M'accompagner chez le médecin</h2>
+          <p>Je cherche quelqu'un pour m'accompagner à pied à mon rendez-vous.</p>
+          <ul class="infos">
+            <li>📍 Paris 20e</li>
+            <li>📅 24 novembre 2026</li>
+            <li>⏱️ 1 h</li>
+          </ul>
+          <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="carte-mission carte-bleue">
+          <span class="categorie">Assistance numérique</span>
+          <h2>Imprimer mes billets</h2>
+          <p>Je dois imprimer mes billets de train mais mon imprimante ne marche pas.</p>
+          <ul class="infos">
+            <li>📍 Vincennes</li>
+            <li>📅 25 novembre 2026</li>
+            <li>⏱️ 20 min</li>
+          </ul>
+          <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

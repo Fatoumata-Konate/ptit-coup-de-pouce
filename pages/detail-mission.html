@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail de la mission - P'tit coup de pouce</title>
+
+  <!-- Bootstrap (vu en cours) : TOUJOURS avant nos CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Polices Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+25&family=Jockey+One&family=Jost&family=Julee&family=Koulen&family=Kreon&family=Parkinsans&display=swap" rel="stylesheet">
+
+  <!-- Nos fichiers CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/commun.css">
+  <link rel="stylesheet" href="../css/missions.css">
+    
+</head>
+<body>
+
+  <!--  MENU DU HAUT  -->
+  <header class="menu">
+    <a href="../index.html" class="logo">P'tit coup de pouce <span class="coeur">♥</span></a>
+
+    <nav>
+      <a href="../index.html" class="lien-menu">Accueil</a>
+      <a href="missions.html" class="lien-menu actif">Les missions</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+    </nav>
+
+    <a href="connexion.html" class="bouton-violet">Connexion</a>
+  </header>
+  <main>
+    <a href="missions.html" class="lien-retour">← Retour aux missions</a>
+
+    <div class="row g-4">
+
+      <!--LA MISSION  -->
+      <div class="col-12 col-lg-8">
+        <article class="carte-mission carte-verte detail-mission">
+          <span class="categorie">Courses</span>
+          <h1>Porter mes courses</h1>
+          <p class="description">
+            Bonjour ! J'ai 78 ans et je fais mon marché tous les vendredis.
+            Les sacs sont devenus trop lourds pour moi. J'aurais besoin de quelqu'un
+            pour m'aider à les porter du marché jusqu'à chez moi (10 minutes à pied).
+          </p>
+          <ul class="infos">
+            <li>📍 Paris 11e (l'adresse exacte sera donnée par la messagerie)</li>
+            <li>📅 Vendredi 20 novembre 2026, à 10 h</li>
+            <li>⏱️ 45 min</li>
+          </ul>
+
+          <button type="button" id="bouton-aide" class="bouton-noir">PROPOSER MON AIDE</button>
+
+          <p id="message-confirmation" class="message-confirmation" role="status" hidden>
+            ✅ Merci ! Jeanne a reçu une notification. Elle pourra accepter ou refuser votre aide.
+          </p>
+        </article>
+      </div>
+
+      <!--  LA PERSONNE QUI DEMANDE -->
+      <div class="col-12 col-lg-4">
+        <aside class="carte-demandeur">
+          <div class="avatar">J</div>
+          <h2>Jeanne D.</h2>
+          <p class="etoiles">★★★★☆ <span>4,5 / 5 (12 avis)</span></p>
+          <p>Membre depuis mars 2026 · Profil vérifié ✔️</p>
+          <a href="messagerie.html" class="bouton-violet">Envoyer un message</a>
+          <a href="#" class="lien-souligne">Signaler un abus</a>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="../js/mission.js"></script>
+</body>
+</html>
