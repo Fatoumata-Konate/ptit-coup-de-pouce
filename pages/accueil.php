@@ -14,9 +14,11 @@ $user = current_user();
 <header class="site-header">
     <a class="brand" href="index.php">P’tit coup de pouce <span>♥</span></a>
     <nav class="main-nav">
-        <a class="active" href="index.php">Accueil</a>
-        <a href="missions.php">Les missions</a>
-        <a href="associations.php">Les associations</a>
+      <a href="accueil.php" class="lien-menu actif">Accueil</a>
+      <a href="missions.html" class="lien-menu">Les missions</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+      <a href="messagerie.html" class="lien-menu">Ma messagerie</a>
+      <a href="admin.html" class="lien-menu">Administration</a>
     </nav>
     <div class="header-action">
         <?php if ($user): ?>
