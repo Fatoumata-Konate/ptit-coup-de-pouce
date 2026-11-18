@@ -12,7 +12,7 @@ $user = current_user();
 </head>
 <body class="home-page">
 <header class="site-header">
-    <a class="brand" href="index.php">P’tit coup de pouce <span>♥</span></a>
+    <a class="brand" href="accueil.php">P’tit coup de pouce <span>♥</span></a>
     <nav class="main-nav">
       <a href="accueil.php" class="lien-menu actif">Accueil</a>
       <a href="missions.html" class="lien-menu">Les missions</a>
@@ -47,7 +47,7 @@ $user = current_user();
         </div>
         <div class="hero-visual">
             <div class="hero-image-wrap">
-                <img src="assets/hero-solidarite.png" alt="Des personnes réunies autour de la planète">
+                <img src="../images/photo-terre.jpeg" alt="Des personnes réunies autour de la planète">
             </div>
             <p class="handwritten">Ensemble, faisons la différence</p>
             <span class="doodle doodle-one">♡</span>

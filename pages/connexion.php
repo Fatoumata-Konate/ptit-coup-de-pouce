@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="auth-page">
-<a class="auth-brand" href="index.php">P’tit coup de pouce <span>♥</span></a>
+<a class="auth-brand" href="accueil.php">P’tit coup de pouce <span>♥</span></a>
 <main class="auth-shell login-shell">
     <section class="auth-panel login-panel">
         <div class="auth-heading">

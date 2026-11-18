@@ -156,3 +156,10 @@ a { color: inherit; }
     .login-panel .auth-heading { margin-bottom: 30px; }
     .auth-links { font-size: 12px; }
 }
+/* Fond de la maquette pour connexion et inscription */
+.auth-page {
+  background-image: url("../images/fond-connexion.png");
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 100vh;
+}
