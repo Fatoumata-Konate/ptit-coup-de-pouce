@@ -1,0 +1,202 @@
+/* PAGE TABLEAU DE BORD */
+
+.page-tableau {
+  background-color: var(--gris-clair);
+  padding: 50px 40px;
+  min-height: 100vh;
+}
+
+.page-tableau .titre-page {
+  font-family: var(--police-titre-accueil);
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page-tableau .sous-titre {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* ----- Boutons d'action en haut ----- */
+.actions-haut {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* ----- Chiffres clés ----- */
+.stat {
+  height: 100%;
+  padding: 25px;
+  border-radius: var(--arrondi-carte);
+}
+
+.stat-verte { background-color: var(--carte-verte); }
+.stat-rose  { background-color: var(--carte-rose); }
+.stat-bleue { background-color: var(--carte-bleue); }
+.stat-violette { background-color: var(--violet); color: var(--blanc); }
+
+.stat-nombre {
+  font-family: var(--police-manuscrite);
+  font-size: 56px;
+  line-height: 1;
+}
+
+.stat-texte {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+/* ----- Titres de section ----- */
+.titre-section {
+  font-family: var(--police-manuscrite);
+  font-size: 40px;
+  margin: 50px 0 20px;
+}
+
+/* ----- Cartes des missions en cours ----- */
+.carte-mission {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  border-radius: var(--arrondi-carte);
+}
+
+.carte-verte { background-color: var(--carte-verte); }
+.carte-rose  { background-color: var(--carte-rose); }
+.carte-bleue { background-color: var(--carte-bleue); }
+
+.categorie {
+  align-self: flex-start;
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 14px;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.carte-mission h3 {
+  font-family: var(--police-manuscrite);
+  font-size: 30px;
+}
+
+.infos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.boutons-carte {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.carte-mission .bouton-violet {
+  font-size: 18px;
+  padding: 8px 25px;
+}
+
+/* ----- Bloc blanc (tableau et notifications) ----- */
+.bloc-tableau {
+  background-color: var(--blanc);
+  border-radius: var(--arrondi-carte);
+  padding: 30px;
+  height: 100%;
+}
+
+.bloc-tableau h2 {
+  font-family: var(--police-manuscrite);
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.bloc-tableau .table {
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+.bloc-tableau th {
+  font-family: var(--police-etiquette);
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* ----- Statuts des demandes ----- */
+.statut {
+  display: inline-block;
+  font-size: 14px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.statut-attente { background-color: var(--carte-bleue); }
+.statut-validee { background-color: var(--carte-verte); }
+.statut-terminee { background-color: var(--carte-rose); }
+
+/* ----- Notifications ----- */
+.liste-notifications {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liste-notifications li {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--bordure-champ);
+  font-size: 17px;
+}
+
+.liste-notifications li:last-child {
+  border-bottom: none;
+}
+
+.liste-notifications .date-notif {
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.pastille-nouveau {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--violet);
+}
+
+.pastille-lu {
+  background-color: transparent;
+  border: 1px solid var(--bordure-champ);
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .page-tableau {
+    padding: 30px 15px;
+  }
+
+  .page-tableau .titre-page {
+    font-size: 44px;
+  }
+
+  .titre-section {
+    font-size: 32px;
+  }
+
+  .bloc-tableau {
+    padding: 20px;
+  }
+}

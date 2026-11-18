@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon profil - P'tit coup de pouce</title>
+
+  <!-- Bootstrap : TOUJOURS avant nos CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Polices Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+25&family=Jockey+One&family=Jost&family=Julee&family=Koulen&family=Kreon&family=Parkinsans&display=swap" rel="stylesheet">
+
+  <!-- Nos fichiers CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/communv2.css">
+  <link rel="stylesheet" href="../css/profil.css">
+</head>
+<body>
+
+  <!-- MENU DU HAUT (identique aux autres pages) -->
+  <header class="menu">
+    <a href="../index.html" class="logo">P'tit coup de pouce <span class="coeur">♥</span></a>
+
+    <nav>
+      <a href="../index.html" class="lien-menu">Accueil</a>
+      <a href="missions.html" class="lien-menu">Les missions</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+      <a href="messagerie.html" class="lien-menu">Ma messagerie</a>
+      <a href="admin.html" class="lien-menu">Administration</a>
+    </nav>
+
+    <a href="connexion.html" class="bouton-violet">Connexion</a>
+  </header>
+
+  <main class="page-profil">
+    <h1 class="titre-page">Mon profil</h1>
+
+    <div class="row g-4">
+
+      <!-- CARTE DE LA PERSONNE -->
+      <div class="col-12 col-lg-4">
+        <aside class="carte-profil">
+          <div class="avatar-profil">C</div>
+          <h2>Camille L.</h2>
+          <p class="etoiles">★★★★★ <span>4,8 / 5 (9 avis)</span></p>
+          <p>Membre depuis septembre 2026 · Profil vérifié ✔️</p>
+          <p>📍 Paris 12e</p>
+          <button type="button" id="bouton-modifier" class="bouton-violet">Modifier mon profil</button>
+          <a href="tableau-de-bord.html" class="lien-souligne">← Retour au tableau de bord</a>
+        </aside>
+      </div>
+
+      <!-- INFORMATIONS PERSONNELLES -->
+      <div class="col-12 col-lg-8">
+        <section class="bloc-profil">
+          <h2>Mes informations</h2>
+
+          <form id="formulaire-profil">
+            <div class="row g-3">
+
+              <div class="col-12 col-md-6">
+                <label class="etiquette" for="prenom">Prénom</label>
+                <input class="champ" type="text" id="prenom" name="prenom" value="Camille" disabled>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="etiquette" for="nom">Nom</label>
+                <input class="champ" type="text" id="nom" name="nom" value="Lefèvre" disabled>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="etiquette" for="email">E-mail</label>
+                <input class="champ" type="email" id="email" name="email" value="camille.lefevre@exemple.fr" disabled>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="etiquette" for="ville">Localisation approximative</label>
+                <input class="champ" type="text" id="ville" name="ville" value="Paris 12e" disabled>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="etiquette" for="statut">Statut</label>
+                <select class="champ" id="statut" name="statut" disabled>
+                  <option value="benevole" selected>Bénévole</option>
+                  <option value="beneficiaire">Bénéficiaire</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="etiquette" for="presentation">Présentation</label>
+                <textarea class="champ zone-texte" id="presentation" name="presentation" disabled>Étudiante, j'aime rendre service et partager mon temps libre. Je suis à l'aise avec le numérique et patiente pour expliquer.</textarea>
+              </div>
+
+            </div>
+
+            <div class="boutons-formulaire" id="boutons-enregistrer" hidden>
+              <button type="submit" class="bouton-noir">ENREGISTRER</button>
+              <button type="button" id="bouton-annuler" class="bouton-violet">Annuler</button>
+            </div>
+          </form>
+
+          <p id="message-confirmation" class="message-confirmation mt-3" role="status" hidden>
+            ✅ Vos modifications ont bien été enregistrées.
+          </p>
+        </section>
+      </div>
+
+    </div>
+
+    <div class="row g-4 mt-1">
+
+      <!-- COMPÉTENCES -->
+      <div class="col-12 col-lg-4">
+        <section class="bloc-profil">
+          <h2>Mes compétences</h2>
+          <ul class="liste-competences">
+            <li class="competence">Assistance numérique</li>
+            <li class="competence">Courses</li>
+            <li class="competence">Accompagnement</li>
+            <li class="competence">Jardinage</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- MISSIONS RÉALISÉES -->
+      <div class="col-12 col-lg-8">
+        <section class="bloc-profil">
+          <h2>Missions réalisées</h2>
+          <ul class="liste-realisees">
+            <li>
+              <strong>Porter mes courses</strong>
+              Courses · Paris 11e · 6 novembre 2026
+            </li>
+            <li>
+              <strong>Utiliser mon smartphone</strong>
+              Assistance numérique · Lyon 3e · 2 novembre 2026
+            </li>
+            <li>
+              <strong>Imprimer mes billets</strong>
+              Assistance numérique · Vincennes · 28 octobre 2026
+            </li>
+          </ul>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- AVIS REÇUS -->
+    <div class="row g-4 mt-1">
+      <div class="col-12">
+        <section class="bloc-profil">
+          <h2>Avis reçus</h2>
+
+          <div class="avis">
+            <p class="auteur">Jeanne D.</p>
+            <p class="etoiles">★★★★★</p>
+            <p>Camille est arrivée à l'heure et très gentille. Merci pour ce coup de pouce !</p>
+          </div>
+
+          <div class="avis">
+            <p class="auteur">Michel R.</p>
+            <p class="etoiles">★★★★☆</p>
+            <p>Très patiente avec mon téléphone, j'ai enfin compris les appels vidéo.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/profil.js"></script>
+</body>
+</html>

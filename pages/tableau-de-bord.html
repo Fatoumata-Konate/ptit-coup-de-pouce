@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord - P'tit coup de pouce</title>
+
+  <!-- Bootstrap : TOUJOURS avant nos CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Polices Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+25&family=Jockey+One&family=Jost&family=Julee&family=Koulen&family=Kreon&family=Parkinsans&display=swap" rel="stylesheet">
+
+  <!-- Nos fichiers CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/communv2.css">
+  <link rel="stylesheet" href="../css/tableau-de-bord.css">
+</head>
+<body>
+
+  <!-- MENU DU HAUT (identique aux autres pages) -->
+  <header class="menu">
+    <a href="../index.html" class="logo">P'tit coup de pouce <span class="coeur">♥</span></a>
+
+    <nav>
+      <a href="../index.html" class="lien-menu">Accueil</a>
+      <a href="missions.html" class="lien-menu">Les missions</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+      <a href="messagerie.html" class="lien-menu">Ma messagerie</a>
+      <a href="admin.html" class="lien-menu">Administration</a>
+    </nav>
+
+    <a href="connexion.html" class="bouton-violet">Connexion</a>
+  </header>
+
+  <main class="page-tableau">
+    <h1 class="titre-page">Mon tableau de bord</h1>
+    <p class="sous-titre">Bonjour Camille, voici un résumé de votre activité.</p>
+
+    <div class="actions-haut">
+      <a href="publier.html" class="bouton-violet">+ Publier une demande</a>
+      <a href="profil.html" class="bouton-violet">Voir mon profil</a>
+    </div>
+
+    <!-- CHIFFRES CLÉS -->
+    <div class="row g-4">
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-verte">
+          <div class="stat-nombre">2</div>
+          <div class="stat-texte">Missions en cours</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-rose">
+          <div class="stat-nombre">3</div>
+          <div class="stat-texte">Demandes publiées</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-bleue">
+          <div class="stat-nombre">12 h</div>
+          <div class="stat-texte">De bénévolat réalisées</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-violette">
+          <div class="stat-nombre">4,8</div>
+          <div class="stat-texte">Note moyenne sur 5</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MISSIONS EN COURS -->
+    <h2 class="titre-section">Mes missions en cours</h2>
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6">
+        <article class="carte-mission carte-verte">
+          <span class="categorie">Courses</span>
+          <h3>Porter mes courses</h3>
+          <ul class="infos">
+            <li>👤 Jeanne D.</li>
+            <li>📍 Paris 11e</li>
+            <li>📅 20 novembre 2026</li>
+          </ul>
+          <div class="boutons-carte">
+            <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+            <a href="messagerie.html" class="bouton-violet">Écrire à Jeanne</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <article class="carte-mission carte-rose">
+          <span class="categorie">Assistance numérique</span>
+          <h3>Utiliser mon smartphone</h3>
+          <ul class="infos">
+            <li>👤 Michel R.</li>
+            <li>📍 Lyon 3e</li>
+            <li>📅 21 novembre 2026</li>
+          </ul>
+          <div class="boutons-carte">
+            <a href="detail-mission.html" class="bouton-violet">Voir la mission</a>
+            <a href="messagerie.html" class="bouton-violet">Écrire à Michel</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <!-- DEMANDES PUBLIÉES + NOTIFICATIONS -->
+    <div class="row g-4 mt-2">
+
+      <div class="col-12 col-lg-8">
+        <section class="bloc-tableau">
+          <h2>Mes demandes publiées</h2>
+          <div class="table-responsive">
+            <table class="table align-middle">
+              <thead>
+                <tr>
+                  <th>Demande</th>
+                  <th>Date</th>
+                  <th>Réponses</th>
+                  <th>Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tailler mes plantes</td>
+                  <td>23 novembre 2026</td>
+                  <td>2</td>
+                  <td><span class="statut statut-attente">En attente</span></td>
+                </tr>
+                <tr>
+                  <td>Imprimer mes billets</td>
+                  <td>25 novembre 2026</td>
+                  <td>1</td>
+                  <td><span class="statut statut-validee">Validée</span></td>
+                </tr>
+                <tr>
+                  <td>Déclarer mes impôts</td>
+                  <td>12 novembre 2026</td>
+                  <td>3</td>
+                  <td><span class="statut statut-terminee">Terminée</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <section class="bloc-tableau">
+          <h2>Notifications</h2>
+          <ul class="liste-notifications">
+            <li>
+              <span class="pastille-nouveau"></span>
+              <span>Jeanne a accepté votre aide pour « Porter mes courses ».
+                <span class="date-notif">Aujourd'hui</span></span>
+            </li>
+            <li>
+              <span class="pastille-nouveau"></span>
+              <span>Nouveau message de Michel R.
+                <span class="date-notif">Hier</span></span>
+            </li>
+            <li>
+              <span class="pastille-nouveau pastille-lu"></span>
+              <span>Votre demande « Imprimer mes billets » a été validée.
+                <span class="date-notif">Il y a 3 jours</span></span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

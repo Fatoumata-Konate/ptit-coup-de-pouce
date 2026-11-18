@@ -1,0 +1,177 @@
+/* PAGE PROFIL */
+
+.page-profil {
+  background-color: var(--gris-clair);
+  padding: 50px 40px;
+  min-height: 100vh;
+}
+
+.page-profil .titre-page {
+  font-family: var(--police-titre-accueil);
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ----- Carte principale (photo, nom, note) ----- */
+.carte-profil {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 25px;
+  background-color: var(--blanc);
+  border-radius: var(--arrondi-carte);
+}
+
+.avatar-profil {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carte-profil h2 {
+  font-family: var(--police-manuscrite);
+  font-size: 36px;
+}
+
+.etoiles {
+  color: var(--violet);
+  font-size: 22px;
+}
+
+.etoiles span {
+  color: var(--noir);
+  font-size: 16px;
+}
+
+/* ----- Blocs d'informations ----- */
+.bloc-profil {
+  height: 100%;
+  padding: 30px;
+  background-color: var(--blanc);
+  border-radius: var(--arrondi-carte);
+}
+
+.bloc-profil h2 {
+  font-family: var(--police-manuscrite);
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.bloc-profil .champ {
+  width: 100%;
+}
+
+.bloc-profil .champ:disabled {
+  background-color: var(--gris-clair);
+  color: var(--noir);
+  opacity: 1;
+}
+
+.zone-texte {
+  height: 130px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  resize: vertical;
+}
+
+/* ----- Compétences ----- */
+.liste-competences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.competence {
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 16px;
+  padding: 6px 18px;
+  border-radius: 20px;
+}
+
+/* ----- Missions réalisées ----- */
+.liste-realisees {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liste-realisees li {
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.liste-realisees li:nth-child(3n + 1) { background-color: var(--carte-verte); }
+.liste-realisees li:nth-child(3n + 2) { background-color: var(--carte-rose); }
+.liste-realisees li:nth-child(3n)     { background-color: var(--carte-bleue); }
+
+.liste-realisees li:last-child {
+  margin-bottom: 0;
+}
+
+.liste-realisees strong {
+  font-family: var(--police-manuscrite);
+  font-size: 24px;
+  display: block;
+}
+
+/* ----- Avis ----- */
+.avis {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--bordure-champ);
+  font-size: 17px;
+}
+
+.avis:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.avis .auteur {
+  font-family: var(--police-manuscrite);
+  font-size: 24px;
+}
+
+/* ----- Message après enregistrement ----- */
+.message-confirmation {
+  background-color: var(--blanc);
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.boutons-formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .page-profil {
+    padding: 30px 15px;
+  }
+
+  .page-profil .titre-page {
+    font-size: 44px;
+  }
+
+  .bloc-profil {
+    padding: 20px;
+  }
+}
