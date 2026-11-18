@@ -1,0 +1,207 @@
+/* PAGE MESSAGERIE */
+
+.page-messagerie {
+  background-color: var(--gris-clair);
+  padding: 50px 40px;
+  min-height: 100vh;
+}
+
+.titre-page {
+  font-family: var(--police-titre-accueil);
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ----- Liste des conversations ----- */
+.liste-conversations {
+  background-color: var(--bleu-fond);
+  border-radius: var(--arrondi-carte);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.liste-conversations h2,
+.entete-conversation h2 {
+  font-family: var(--police-manuscrite);
+  font-size: 32px;
+}
+
+.conversation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  background-color: var(--blanc);
+  border-radius: 25px;
+  border: 2px solid transparent;
+}
+
+.conversation:hover {
+  border-color: var(--violet);
+}
+
+.conversation.actif {
+  border-color: var(--violet);
+}
+
+.conversation-texte {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.apercu {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pastille {
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 13px;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-petit {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--violet);
+  color: var(--blanc);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----- Zone de conversation ----- */
+.zone-conversation {
+  background-color: var(--blanc);
+  border-radius: var(--arrondi-carte);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.entete-conversation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  background-color: var(--bleu-fond);
+}
+
+.lien-mission {
+  font-family: var(--police-lien);
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.fil-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.jour {
+  align-self: center;
+  font-size: 14px;
+  color: var(--bordure-champ);
+}
+
+.bulle {
+  max-width: 75%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 18px;
+}
+
+.bulle .heure {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+  text-align: right;
+}
+
+.bulle.recue {
+  align-self: flex-start;
+  background-color: var(--carte-bleue);
+  border-bottom-left-radius: 6px;
+}
+
+.bulle.envoyee {
+  align-self: flex-end;
+  background-color: var(--violet);
+  color: var(--blanc);
+  border-bottom-right-radius: 6px;
+}
+
+/* ----- Zone d'envoi ----- */
+.envoi-message {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 20px 25px;
+  border-top: 1px solid var(--bordure-champ);
+}
+
+.envoi-message .champ {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+}
+
+.envoi-message .bouton-violet {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 22px;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .page-messagerie {
+    padding: 30px 15px;
+  }
+
+  .titre-page {
+    font-size: 44px;
+  }
+
+  .bulle {
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+  .zone-conversation {
+    min-height: 480px;
+  }
+
+  .envoi-message {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .envoi-message .bouton-violet {
+    font-size: 18px;
+  }
+}

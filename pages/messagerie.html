@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messagerie - P'tit coup de pouce</title>
+
+  <!-- Bootstrap : TOUJOURS avant nos CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Polices Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+25&family=Jockey+One&family=Jost&family=Julee&family=Koulen&family=Kreon&family=Parkinsans&display=swap" rel="stylesheet">
+
+  <!-- Nos fichiers CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/communv2.css">
+  <link rel="stylesheet" href="../css/messagerie.css">
+</head>
+<body>
+
+  <!-- MENU DU HAUT -->
+  <header class="menu">
+    <a href="../index.html" class="logo">P'tit coup de pouce <span class="coeur">♥</span></a>
+
+    <nav>
+      <a href="../index.html" class="lien-menu">Accueil</a>
+      <a href="missions.html" class="lien-menu">Les missions</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+      <a href="messagerie.html" class="lien-menu">Ma messagerie</a>
+      <a href="admin.html" class="lien-menu">Administration</a>
+    </nav>
+
+    <a href="connexion.html" class="bouton-violet">Connexion</a>
+  </header>
+
+  <main class="page-messagerie">
+    <h1 class="titre-page">Ma messagerie</h1>
+
+    <div class="row g-4">
+
+      <!-- LISTE DES CONVERSATIONS -->
+      <div class="col-12 col-lg-4">
+        <aside class="liste-conversations">
+          <h2>Conversations</h2>
+
+          <a href="#" class="conversation actif">
+            <span class="avatar-petit">J</span>
+            <span class="conversation-texte">
+              <strong>Jeanne D.</strong>
+              <span class="apercu">Porter mes courses · Parfait, à vendredi !</span>
+            </span>
+            <span class="pastille">2</span>
+          </a>
+
+          <a href="#" class="conversation">
+            <span class="avatar-petit">M</span>
+            <span class="conversation-texte">
+              <strong>Michel R.</strong>
+              <span class="apercu">Utiliser mon smartphone · Merci beaucoup</span>
+            </span>
+          </a>
+
+          <a href="#" class="conversation">
+            <span class="avatar-petit">S</span>
+            <span class="conversation-texte">
+              <strong>Simone L.</strong>
+              <span class="apercu">Déclarer mes impôts · Quelle heure vous convient ?</span>
+            </span>
+          </a>
+        </aside>
+      </div>
+
+      <!-- CONVERSATION OUVERTE -->
+      <div class="col-12 col-lg-8">
+        <section class="zone-conversation">
+
+          <div class="entete-conversation">
+            <span class="avatar-petit">J</span>
+            <div>
+              <h2>Jeanne D.</h2>
+              <a href="detail-mission.html" class="lien-mission">Mission : Porter mes courses</a>
+            </div>
+          </div>
+
+          <div class="fil-messages" role="log" aria-live="polite">
+            <p class="jour">Mercredi 18 novembre</p>
+
+            <div class="bulle recue">
+              <p>Bonjour, merci d'avoir proposé votre aide !</p>
+              <span class="heure">14:02</span>
+            </div>
+
+            <div class="bulle envoyee">
+              <p>Bonjour Jeanne, avec plaisir. Où nous retrouvons-nous vendredi ?</p>
+              <span class="heure">14:10</span>
+            </div>
+
+            <div class="bulle recue">
+              <p>Devant l'entrée du marché, vers 10 h. Je porterai un manteau rouge.</p>
+              <span class="heure">14:12</span>
+            </div>
+
+            <div class="bulle recue">
+              <p>Parfait, à vendredi !</p>
+              <span class="heure">14:13</span>
+            </div>
+          </div>
+
+          <form class="envoi-message" id="formulaire-message">
+            <label class="visually-hidden" for="nouveau-message">Votre message</label>
+            <input class="champ" type="text" id="nouveau-message" name="message" placeholder="Écrivez votre message..." required>
+            <button type="submit" class="bouton-violet">Envoyer</button>
+          </form>
+
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

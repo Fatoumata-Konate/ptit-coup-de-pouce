@@ -1,0 +1,126 @@
+/* PAGE ADMINISTRATION */
+
+.page-admin {
+  background-color: var(--gris-clair);
+  padding: 50px 40px;
+  min-height: 100vh;
+}
+
+.titre-page {
+  font-family: var(--police-titre-accueil);
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ----- Chiffres clés ----- */
+.stat {
+  height: 100%;
+  padding: 25px;
+  border-radius: var(--arrondi-carte);
+}
+
+.stat-verte  { background-color: var(--carte-verte); }
+.stat-rose   { background-color: var(--carte-rose); }
+.stat-bleue  { background-color: var(--carte-bleue); }
+.stat-alerte { background-color: var(--violet); color: var(--blanc); }
+
+.stat-nombre {
+  font-family: var(--police-manuscrite);
+  font-size: 56px;
+  line-height: 1;
+}
+
+.stat-texte {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+/* ----- Blocs de tableaux ----- */
+.bloc-admin {
+  background-color: var(--blanc);
+  border-radius: var(--arrondi-carte);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.bloc-admin h2 {
+  font-family: var(--police-manuscrite);
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.bloc-admin .table {
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+.bloc-admin th {
+  font-family: var(--police-etiquette);
+  font-weight: normal;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.bloc-admin td {
+  white-space: nowrap;
+}
+
+/* ----- Statuts ----- */
+.statut {
+  display: inline-block;
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.statut-attente { background-color: var(--carte-rose); }
+.statut-ok      { background-color: var(--carte-verte); }
+
+/* ----- Boutons des tableaux ----- */
+.bouton-petit {
+  border: none;
+  cursor: pointer;
+  font-family: var(--police-lien);
+  font-size: 16px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  margin-right: 4px;
+}
+
+.bouton-petit-noir {
+  background-color: var(--noir);
+  color: var(--blanc);
+}
+
+.bouton-petit-violet {
+  background-color: var(--violet);
+  color: var(--blanc);
+}
+
+.bouton-petit:hover {
+  opacity: 0.85;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .page-admin {
+    padding: 30px 15px;
+  }
+
+  .titre-page {
+    font-size: 44px;
+  }
+
+  .bloc-admin {
+    padding: 20px 15px;
+  }
+
+  .stat-nombre {
+    font-size: 44px;
+  }
+
+  .stat-texte {
+    font-size: 15px;
+  }
+}

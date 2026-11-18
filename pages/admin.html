@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administration - P'tit coup de pouce</title>
+
+  <!-- Bootstrap : TOUJOURS avant nos CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Polices Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+25&family=Jockey+One&family=Jost&family=Julee&family=Koulen&family=Kreon&family=Parkinsans&display=swap" rel="stylesheet">
+
+  <!-- Nos fichiers CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/communv2.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+  <!-- MENU DU HAUT -->
+  <header class="menu">
+    <a href="../index.html" class="logo">P'tit coup de pouce <span class="coeur">♥</span></a>
+
+    <nav>
+      <a href="../index.html" class="lien-menu">Accueil</a>
+      <a href="missions.html" class="lien-menu">Les missions</a>
+      <a href="associations.html" class="lien-menu">Les associations</a>
+      <a href="messagerie.html" class="lien-menu">Ma messagerie</a>
+      <a href="admin.html" class="lien-menu actif">Administration</a>
+    </nav>
+
+    <a href="connexion.html" class="bouton-violet">Déconnexion</a>
+  </header>
+
+  <main class="page-admin">
+    <h1 class="titre-page">Administration</h1>
+
+    <!-- CHIFFRES CLÉS -->
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-verte">
+          <p class="stat-nombre">128</p>
+          <p class="stat-texte">Membres inscrits</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-rose">
+          <p class="stat-nombre">34</p>
+          <p class="stat-texte">Missions en cours</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-bleue">
+          <p class="stat-nombre">212</p>
+          <p class="stat-texte">Missions terminées</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat stat-alerte">
+          <p class="stat-nombre">3</p>
+          <p class="stat-texte">Signalements à traiter</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGNALEMENTS -->
+    <section class="bloc-admin">
+      <h2>Signalements</h2>
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Signalé par</th>
+              <th>Concerne</th>
+              <th>Motif</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17/11/2026</td>
+              <td>Michel R.</td>
+              <td>Annonce « Tailler mes plantes »</td>
+              <td>Demande d'argent</td>
+              <td><span class="statut statut-attente">À traiter</span></td>
+              <td>
+                <button type="button" class="bouton-petit bouton-petit-noir">Voir</button>
+                <button type="button" class="bouton-petit bouton-petit-violet">Retirer</button>
+              </td>
+            </tr>
+            <tr>
+              <td>16/11/2026</td>
+              <td>Simone L.</td>
+              <td>Membre Paul T.</td>
+              <td>Comportement inapproprié</td>
+              <td><span class="statut statut-attente">À traiter</span></td>
+              <td>
+                <button type="button" class="bouton-petit bouton-petit-noir">Voir</button>
+                <button type="button" class="bouton-petit bouton-petit-violet">Suspendre</button>
+              </td>
+            </tr>
+            <tr>
+              <td>14/11/2026</td>
+              <td>Jeanne D.</td>
+              <td>Message de Luc B.</td>
+              <td>Spam</td>
+              <td><span class="statut statut-ok">Traité</span></td>
+              <td>
+                <button type="button" class="bouton-petit bouton-petit-noir">Voir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- MISSIONS À VALIDER -->
+    <section class="bloc-admin">
+      <h2>Missions à valider</h2>
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th>Titre</th>
+              <th>Catégorie</th>
+              <th>Ville</th>
+              <th>Publiée par</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Imprimer mes billets</td>
+              <td>Assistance numérique</td>
+              <td>Vincennes</td>
+              <td>Gilbert P.</td>
+              <td>
+                <button type="button" class="bouton-petit bouton-petit-noir">Valider</button>
+                <button type="button" class="bouton-petit bouton-petit-violet">Refuser</button>
+              </td>
+            </tr>
+            <tr>
+              <td>M'accompagner chez le médecin</td>
+              <td>Accompagnement</td>
+              <td>Paris 20e</td>
+              <td>Odette M.</td>
+              <td>
+                <button type="button" class="bouton-petit bouton-petit-noir">Valider</button>
+                <button type="button" class="bouton-petit bouton-petit-violet">Refuser</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- MEMBRES -->
+    <section class="bloc-admin">
+      <h2>Membres</h2>
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Rôle</th>
+              <th>Inscrit depuis</th>
+              <th>Profil</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jeanne D.</td>
+              <td>Demandeur</td>
+              <td>Mars 2026</td>
+              <td><span class="statut statut-ok">Vérifié</span></td>
+              <td>
+                <button type="button" class="bouton-petit bouton-petit-noir">Voir</button>
+                <button type="button" class="bouton-petit bouton-petit-violet">Suspendre</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Paul T.</td>
+              <td>Bénévole</td>
+              <td>Octobre 2026</td>
+              <td><span class="statut statut-attente">Non vérifié</span></td>
+              <td>
+                <button type="button" class="bouton-petit bouton-petit-noir">Vérifier</button>
+                <button type="button" class="bouton-petit bouton-petit-violet">Suspendre</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

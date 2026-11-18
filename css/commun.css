@@ -35,12 +35,15 @@ a {
 }
 
 nav {
-  display: flex;
-  gap: 60px;
+  order: 3;
+  width: 100%;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .lien-menu {
-  font-size: 26px;
+  font-size: 14px;
 }
 
 .lien-menu:hover,
